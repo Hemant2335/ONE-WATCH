@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
-const Switchtab = ({ data, Onswitch }) => {
+const Switchtab = ({ data, Onswitch ,one ,two } , props) => {
   const [tab, settab] = useState({
-    month : "active",
-    year : ""
+    month : "",
+    year : "active"
   })
 
   const changetab=(type)=>
@@ -14,7 +14,7 @@ const Switchtab = ({ data, Onswitch }) => {
             month : "",
             year : "active"
         })
-        Onswitch("day");
+        Onswitch("movie");
     }
     else
     {
@@ -22,7 +22,7 @@ const Switchtab = ({ data, Onswitch }) => {
             month : "active",
             year : ""
         })
-        Onswitch("week");
+        Onswitch("tv");
     }
     
   }
@@ -31,8 +31,8 @@ const Switchtab = ({ data, Onswitch }) => {
   return (
     <div>
       <div className="tabs tabs-boxed">
-        <a className={`tab tab-${tab.month}`} onClick={()=>changetab("month")} >Day</a>
-        <a className={`tab tab-${tab.year}`} onClick={()=>changetab("year")}>Week</a>
+        <a className={`tab tab-${tab.month}`} onClick={()=>changetab("month")} >{two}</a>
+        <a className={`tab tab-${tab.year}`} onClick={()=>changetab("year")}>{one}</a>
       </div>
     </div>
   );

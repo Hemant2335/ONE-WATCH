@@ -71,7 +71,7 @@ const genresCall = async()=>{
   return (
     <Router>
       <div
-      style={{ backgroundColor : `#1a1110` }} className="overflow-hidden"
+      style={{ backgroundColor : `#1a1110` }} className="overflow-x-hidden"
     >
       <Navbar />
       <Routes>
