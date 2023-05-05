@@ -22,7 +22,7 @@ const Navbar = () => {
       navigate(`/explore/movie`)
     }
     else{
-      navigate(`/explore/tvshows`)
+      navigate(`/explore/tv`)
     }
   }
 
@@ -33,13 +33,13 @@ const Navbar = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><Link to="/explore/movie"><a>Movies</a></Link></li>
-      <li><Link to="/explore/tvshows"><a>TV Shows</a></Link></li>
+      <li><a onClick={()=>navhandle("movie")}>Movies</a></li>
+      <li><a onClick={()=>navhandle("tv")}>TV Shows</a></li>
     </ul>
   </div>
   <div className="navbar-end">
   <input type="text" placeholder="Search" className="input input-bordered w-full max-w-xs" onKeyUp={queryhandle}
-  onChange={(e)=>setquery(e.target.value)}
+  onChange={(e)=>setquery(e?.target?.value)}
   />
   </div>
 </div>

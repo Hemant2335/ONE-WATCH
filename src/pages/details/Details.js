@@ -6,6 +6,7 @@ import Cast from '../../components/Cast/Cast';
 import Videosec from '../../components/videosection/Videosec';
 import Recomm from './RecommendMove/Recomm';
 import Similar from './Similar/Similar';
+import Simp from '../Simp/Simp';
 const Details = () => {
 
     const {mediaType , id} = useParams();
@@ -20,7 +21,6 @@ const Details = () => {
         <DetailsBanner video = {data?.results[0]?.key}/>
         <Cast data = {credits?.cast} loading ={creditsLoading} />
         <Videosec data = {data}/>
-        <Similar mediaType = {mediaType}  id  = {id}/>
         <Recomm mediaType = {mediaType}  id  = {id}/>
     </div>;
 }

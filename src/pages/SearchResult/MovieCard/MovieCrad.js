@@ -5,7 +5,7 @@ const MovieCard = (props) => {
 
   return (
     <>
-      <div className="card w-6 shadow-xl h-11 " key={props.key}> 
+      <div className="card w-6 shadow-xl h-11 " key={props.id}> 
       <Img src = {props.img} className="rounded-lg bglazy cursor-pointer "/>
       <h1 className="text-center font-bold mt-4">{props.Title}</h1>
       <h1 className="text-center font-bold text-primary">{props.date}</h1>

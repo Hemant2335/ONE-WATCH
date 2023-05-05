@@ -45,7 +45,7 @@ const Crousels = ({ data, loading ,endpoint}) => {
                         <SwiperSlide
                           className="swiper-1"
                           onClick={() =>
-                            navigate(`/${item.media_type?item.media_type:endpoint}/${item.id}`)
+                            navigate((`/${item.media_type?item.media_type:endpoint}/${item.id}`))
                           }
                           key={item.id}
                         >
