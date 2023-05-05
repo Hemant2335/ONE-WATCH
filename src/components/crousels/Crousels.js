@@ -12,6 +12,7 @@ import Crouselelemt from "./Crouselelemt";
 import { UilArrowRight } from "@iconscout/react-unicons";
 import { UilArrowLeft } from "@iconscout/react-unicons";
 import { useState } from "react";
+import poster1 from "./wallpaperflare.com_wallpaper (4).jpg";
 const Crousels = ({ data, loading ,endpoint}) => {
   const crouselcont = useRef();
   const { url } = useSelector((state) => state.home);
@@ -50,7 +51,7 @@ const Crousels = ({ data, loading ,endpoint}) => {
                         >
                           <Crouselelemt
                             Title={item.title || item.name}
-                            img={url.backdrop_path + item.backdrop_path}
+                            img={(item.backdrop_path)?url.backdrop_path + item.backdrop_path:poster1}
                             desc={item.overview}
                             date={dayjs(item.release_Date).format(
                               "MMM D, YYYY"
