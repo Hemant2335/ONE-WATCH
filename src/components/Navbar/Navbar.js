@@ -29,7 +29,7 @@ const Navbar = () => {
     return <div className='Nav-cont'>
         <div className="navbar bg-base-100 border-solid bg-opacity-0">
   <div className="navbar-start ">
-    <a className="btn btn-neutral normal-case text-xl">ONEWATCH</a>
+    <a className="btn btn-neutral normal-case text-xl" onClick={()=>navigate('/')}>ONEWATCH</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

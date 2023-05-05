@@ -24,7 +24,7 @@ const DetailsBanner = ({video}) => {
     },[data])
 
     return <>
-        <div className='min-h-screen'  >
+        <div className=''  >
         <div className="flex m-17 min-w-screen">
           <Img src = {background} className="rounded-lg h-11 "/>
           <div className='mx-2 w-18'>
@@ -34,13 +34,13 @@ const DetailsBanner = ({video}) => {
           </div>
         </div>
         <div>
-        <div className="flex  min-h-4 m-17">
+        <div className="flex  min-h-4 mt-17 mx-17 mb-4">
   <div className="grid h-17 flex-grow card bg-base-300 rounded-box place-items-center ">Status : {data?.status} </div>
   <div className="divider divider-horizontal"></div>
   <div className="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">Release Date : {dayjs(data?.release_Date).format(
                               "MMM D, YYYY")} </div>
   <div className="divider divider-horizontal"></div>
-  {(data?.runtime)?<div className="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">Runtime : {data?.runtime} mins</div> : <div className="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">Seasons : {data?.seasons?.length}</div>}
+  {(data?.runtime)?<div className="grid h-17 flex-grow card bg-base-300 rounded-box place-items-center">Runtime : {data?.runtime} mins</div> : <div className="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">Seasons : {data?.seasons?.length}</div>}
 </div>
         </div>
         </div>
