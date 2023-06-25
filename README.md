@@ -1,13 +1,9 @@
 
+
 # Screenshots
-![Uploading Screenshot (158).png…]()
-![Uploading Screenshot (151).png…]()
 ![Screenshot (152)](https://github.com/Hemant2335/ONE-WATCH/assets/85656999/889f4644-0b33-4035-aaa5-078225c49eb3)
-![Uploading Screenshot (153).png…]()
-![Uploading Screenshot (154).png…]()
-![Uploading Screenshot (155).png…]()
-![Uploading Screenshot (156).png…]()
-![Uploading Screenshot (157).png…]()
+![Screenshot (153)](https://github.com/Hemant2335/ONE-WATCH/assets/85656999/081787bc-30cf-413c-a337-5e512020c0fe)
+
 
 
 # Getting Started with Create React App
